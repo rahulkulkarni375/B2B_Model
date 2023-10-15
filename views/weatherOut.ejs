@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <style>
+        body{
+            padding: 15%;
+            text-align: center;
+            font-size: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+
+            background: url("https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg") no-repeat center center fixed;
+            /* background-color: rgb(43, 108, 165); */
+            background-size: cover;
+            height: 100%;
+            overflow: hidden;
+        }
+        .cd-cart__layout {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  overflow: hidden;
+  height: 72px;
+  width: 72px;
+  border-radius: var(--radius);
+  transition: height .4s .1s, width  .4s .1s, box-shadow .3s;
+  transition-timing-function: cubic-bezier(.67,.17,.32,.95);
+  background: var(--cd-color-3);
+  box-shadow: 0 4px 30px rgba(#000, .17);
+}
+
+.cd-cart--open .cd-cart__layout {
+  height: 100%;
+  width: 100%;
+  transition-delay: 0s;
+}
+    </style>
+</head>
+<body>
+    <% if (locals.data)  {%>
+    <h1>The weather  in <%= data.CITY%> is <%= data.W %> degree celcius</h1>
+    <p>Weather Description :  <%= data.DES%> </p>
+    <!-- <img src="'+IMGURL+'" alt="image"> -->    
+    <% } %>
+</body>
+</html>

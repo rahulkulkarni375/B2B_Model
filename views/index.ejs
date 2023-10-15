@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/B2B/public/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .modules{
+        color: rgb(0, 20, 20);
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+    }
+body{
+ background: url("https://wallpaperaccess.com/full/58330.jpg");
+ background-size: cover;
+            height: 100%;
+            overflow: hidden;
+}
+
+    .center-body{
+            text-align: center;
+            background: url("https://www.myvestige.com/images/category-banner/11.jpg") no-repeat center center fixed;
+            /* background-color: rgb(43, 108, 165); */
+            background-size: cover;
+           
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+
+            height: 100%;
+            overflow: hidden;
+        }
+        .white{
+          
+          font-size: larger;
+          color:  white;
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <!-- Nav Bar-->
+    <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+         
+        </a>
+      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav px-2 link-dark">Home</a></li>
+        <li><a href="./contact.html" class="nav px-2 link-dark">Contact</a></li>
+   
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <!-- <button type="button" class="btn btn-outline-primary me-2"><a href="./login.ejs">Login</a></button> -->
+
+        <form action="/weather" method="post">
+          <a href="weather.ejs"><button type="button" class="btn btn-primary btn-sm">Get Weather</button></a>
+      </form>
+        
+      </div>
+    </header>
+  </div>
+
+    <!-- Center Body -->
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary center-body">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Agriculture Prodcuts</h1>
+      <h3 class="fw-normal text-muted mb-3 tag" >Making a good and reliable B2B model in Agri products</h3>
+      <!-- <div class="d-flex gap-3 justify-content-center lead fw-normal modules white" style="color: black;"> -->
+       <div class="white">
+        <a class="icon-link white" href="./products.ejs">
+         <b> Products</b>
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+        <a class="icon-link white" href="./buy.ejs">
+            <b>Buy</b>
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+        <a class="icon-link white" href="./sell.ejs"> 
+            <b>Sell</b>
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <!-- </div> -->
+    
+    </div>
+    <!-- <%- include("weather.ejs") %> -->
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Weather Report</title>
+    <style>
+        body{
+            padding: 15%;
+            text-align: center;
+            font-size: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+
+            background: url("https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg") no-repeat center center fixed;
+            /* background-color: rgb(43, 108, 165); */
+            background-size: cover;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <form action="/weather.ejs" method="post">
+       <h1>Please Enter you city name to get weather report</h1>
+        <input type="text" name="city" id="city">  <br><br>
+        <button type="submit" class="btn btn-info">Get Weather</button>
+    </form>
+   
+
+</body>
+</html>
